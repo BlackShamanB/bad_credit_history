@@ -16,7 +16,7 @@
         <div class="row">
           <div class="col-12">
             <div class="section_header">
-              Кредит с плохой кредитной историей и просрочками
+              Помощь в одобрение кредита  по государсвтеной программе  помощи малому или среднему бизнесу 
             </div>
           </div>
           <div class="col-12">
@@ -26,7 +26,7 @@
             </div>
           </div>
           <div class="col-12">
-            <div class="btn_get_credit">Получить кредит</div>
+            <div class="btn_get_credit" @click="scrollToForm">Получить кредит</div>
           </div>
         </div>
       </section>
@@ -34,25 +34,11 @@
         <div class="row">
           <div class="col-12">
             <div class="section_content text-black float-left">
-              У каждого человека может возникнуть ситуация, при которой ему
-              понадобится срочная финансовая помощь. Но не всегда у заемщика
-              может быть идеальная кредитная история, которая гарантирует
-              одобрение кредита в банке.
+              Получите финансовую свободу с нашими выгодными кредитными предложениями!
+               Надежные условия, низкие процентные ставки и оперативное одобрение. Реализуйте свои мечты с нашей поддержкой. Заявка занимает всего несколько минут – начните строить свое будущее прямо сейчас!"
             </div>
           </div>
-          <div class="col-12">
-            <div field="text" class="section_content_2">
-              Такого рода проблема может быть связана со следующими
-              факторами:<br />
-              <ul>
-                <li>неоплаченные счета;</li>
-                <li>просроченные платежи по кредитам;</li>
-                <li>задолженность по кредитным картам и т.д.</li>
-              </ul>
-              Кредиты срочно с плохой кредитной историей, Вы можете получить,
-              обратившись к нам!
-            </div>
-          </div>
+
         </div>
       </section>
       <section class="section-3">
@@ -103,6 +89,12 @@ export default {
   components: {
     Comp,
   },
+  methods: {
+    scrollToForm() {
+      window.scrollTo({ top: document.querySelector('.section-4').getBoundingClientRect().top + 160 , behavior: "smooth" });
+
+    }
+  }
 };
 </script>
 <style>
@@ -171,6 +163,10 @@ export default {
   margin-right: auto;
   margin-top: 45px;
   cursor: pointer;
+}
+.btn_get_credit:hover {
+  color: #2971f5 !important;
+    background-color: #ffffff !important;
 }
 .backgroing_img_1 {
   position: absolute;
